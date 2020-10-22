@@ -1,0 +1,65 @@
+ graph graphname {
+     // This attribute applies to the graph itself
+     size="30,100";
+     // The label attribute can be used to change the label of a node
+     a [label="Start a\nPython project"];
+     // Here, the node shape is changed.
+     b [shape=box, label="What modules\ndo I need?"];
+     c [label="Standard\nscience stuff"];
+     d [label="Activate course2020\n environment", shape=diamond];
+     e [label="Using someone\nelse's project"];
+     f [label="Create environment\n from the included\n .yml file", shape=diamond];
+     g [label="Something new"];
+     h [label="Create a new\nenvironment", shape=diamond];
+
+     i [label="What coding do\n I plan to do?", shape=box];
+     j [label="Quick hack/\nexplore data "]
+     k [label="jupyter\n notebook", shape=diamond]
+     l [label="Complex\nproject"]
+     m [label="IDE\n(Pycharm)", shape=diamond]
+     n [label="Demo for meeting/\nteaching material "]
+     o [label=" jupyter\nnotebook", shape=diamond]
+     p [label="Running tests/\nautomation "]
+     q [label="Command\nline", shape=diamond]
+     pp [label="HPC"]
+     qq [label="See\nabove", shape=diamond]
+
+     r [label="Will this take\n more than a\ncouple of hours?", shape=box]
+     s [label="Yes"]
+     t [label="No"]
+     u [label="I hope\nnot"]
+     v [label="Start a\ngit repo", shape=diamond]
+     vv [label="(and use it)", shape=diamond]
+     w [label="Do I want to share\nthis with others?", shape=box]
+     w1 [label="Yes"]
+     w2 [label="No"]
+     x [label="Do I fear\ntechnology?", shape=box]
+     x1 [label="Yes"]
+     x2 [label="No"]
+     y [label="Email them\nPython files/notebooks\nAND environment", shape=diamond]
+     z [label="Upload project\nto Github*", shape=diamond]
+     wa [label="That's ok"]
+     wb [label="You should\nstill comment\nyour code though"]
+     zz [label="*Other Hosting Services\nAre Available"]
+
+
+     // These edges both have different line properties
+     a -- b -- c --d--i [color=blue];
+     b -- e --f--i [color=blue];
+     b -- g --h--i [color=blue];
+     i -- j --k --r [color=blue];
+     i -- l --m --r [color=blue];
+     i -- n --o --r [color=blue];
+     i -- p --q --r [color=blue];
+     i -- pp --qq --r [color=blue];
+     r -- t -- w [color=blue];
+     r -- s -- v -- vv -- w [color=blue];
+     r -- u --v --vv [color=blue];
+     w -- w1 -- x -- x1 -- y [color=blue];
+     x -- x2 -- z [color=blue];
+     w -- w2 -- wa --wb  [color=blue];
+
+     //b -- d [style=dotted]; [color=blue];
+     // [style=invis] hides a node.
+   }
+
