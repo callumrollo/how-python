@@ -4,15 +4,15 @@
      // The label attribute can be used to change the label of a node
      a [label="Start a\nPython project"];
      // Here, the node shape is changed.
-     b [shape=box, label="What modules\ndo I need?"];
+     b [shape=box, label="What modules\ndo you need?"];
      c [label="Standard\nscience stuff"];
-     d [label="Activate course2020\n environment", shape=diamond];
+     d [label="Activate ppd_python\n environment", shape=diamond];
      e [label="Using someone\nelse's project"];
      f [label="Create environment\n from the included\n .yml file", shape=diamond];
      g [label="Something new"];
      h [label="Create a new\nenvironment", shape=diamond];
 
-     i [label="What coding do\n I plan to do?", shape=box];
+     i [label="What coding do\n you plan to do?", shape=box];
      j [label="Quick hack/\nexplore data "]
      k [label="jupyter\n notebook", shape=diamond]
      l [label="Complex\nproject"]
@@ -30,17 +30,16 @@
      u [label="I hope\nnot"]
      v [label="Start a\ngit repo", shape=diamond]
      vv [label="(and use it)", shape=diamond]
-     w [label="Do I want to share\nthis with others?", shape=box]
+     w [label="Do you want to share\nthis with others?", shape=box]
      w1 [label="Yes"]
      w2 [label="No"]
-     x [label="Do I fear\ntechnology?", shape=box]
+     x [label="Do you fear\ntechnology?", shape=box]
      x1 [label="Yes"]
      x2 [label="No"]
      y [label="Email them\nPython files/notebooks\nAND environment", shape=diamond]
      z [label="Upload project\nto Github*", shape=diamond]
      wa [label="That's ok"]
      wb [label="You should\nstill comment\nyour code though"]
-     zz [label="*Other Hosting Services\nAre Available"]
 
 
      // These edges both have different line properties
