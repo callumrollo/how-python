@@ -3,7 +3,7 @@ This is a spooky demonstration of using sys.argv to provide a python script with
 """
 import sys
 
-# unpacking inputs
+# access inputs with sys.argv and save them in a list:
 inputs = sys.argv[1:]
 # all elements of sys.argv are strings, but we want these inputs to be of different types:
 number = int(inputs[0])
